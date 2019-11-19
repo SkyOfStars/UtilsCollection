@@ -1,4 +1,4 @@
-package com.cy.utils.common;
+package com.cy.utils.Screen;
 
 import android.content.Context;
 import android.content.res.Resources;
