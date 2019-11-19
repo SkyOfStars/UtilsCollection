@@ -10,9 +10,10 @@ import android.view.WindowManager;
 /**
  * 屏幕相关的操作类
  */
-public class ScreenUtils {
+public class ScreenUtil {
 
-    private ScreenUtils() {
+    private ScreenUtil() {
+        throw new UnsupportedOperationException("cannot be instantiated");
     }
 
     /**

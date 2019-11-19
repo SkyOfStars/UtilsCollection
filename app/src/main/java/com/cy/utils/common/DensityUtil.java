@@ -1,6 +1,7 @@
 package com.cy.utils.common;
 
 import android.content.Context;
+import android.util.TypedValue;
 
 /**
  * 分辨率转换
@@ -8,6 +9,7 @@ import android.content.Context;
 public class DensityUtil {
 
     private DensityUtil() {
+        throw new UnsupportedOperationException("cannot be instantiated");
     }
 
     /**
@@ -24,5 +26,17 @@ public class DensityUtil {
     public static int px2dip(Context context, float pxValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (pxValue / scale + 0.5f);
+    }
+
+    /**
+     * sp转px
+     *
+     * @param context
+     * @param spVal
+     * @return
+     */
+    public static int sp2px(Context context, float spVal) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
+                spVal, context.getResources().getDisplayMetrics());
     }
 }
