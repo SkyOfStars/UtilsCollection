@@ -1,14 +1,40 @@
 package com.cy.utils;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.view.View;
 
-import android.os.Bundle;
+import com.cy.utils.fragment.FragmentLazyTest;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int getContentView() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initListener() {
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.tv_fragment_lazyload_text:
+                startActivity(new Intent(mContext, FragmentLazyTest.class));
+                break;
+                default:
+                    break;
+        }
     }
 }

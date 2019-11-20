@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mMultipleStatusView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cy.utils.view.PagerSlidingTabStrip
+        android:id="@+id/alivc_home_pager_tab_trip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        app:pstsIndicatorWidth="40dp"
+        app:pstsShouldExpand="true" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/alivc_home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/alivc_home_pager_tab_trip" />
+</RelativeLayout>
