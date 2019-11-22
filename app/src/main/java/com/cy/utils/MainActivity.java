@@ -1,6 +1,7 @@
 package com.cy.utils;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 
 import com.cy.utils.fragment.FragmentLazyTest;
@@ -25,8 +26,8 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
     }
+
 
     public void onClick(View view) {
         switch (view.getId()){

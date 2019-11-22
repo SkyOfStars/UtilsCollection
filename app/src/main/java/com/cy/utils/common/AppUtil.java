@@ -8,6 +8,8 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
+import java.util.List;
+
 /**
  * created by cy on 2019/11/20 0020.
  */
