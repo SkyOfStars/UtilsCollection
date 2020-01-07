@@ -1,7 +1,7 @@
 package com.cy.utils.common;
 
 import android.util.SparseArray;
-import android.view.View;
+        import android.view.View;
 
 /**
  * 比较规范独立的的ViewHolder.
