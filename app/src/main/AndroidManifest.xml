@@ -17,6 +17,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <service
+            android:name=".service.MyIntentService"
+            android:exported="false"></service>
+        <service
+            android:name=".service.RemoteControlService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".reciever.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +41,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fragment.FragmentLazyTest"/>
+        <activity android:name=".fragment.FragmentLazyTest" />
     </application>
 
 </manifest>
