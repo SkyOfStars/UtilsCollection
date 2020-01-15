@@ -19,7 +19,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <service
             android:name=".service.MyIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
         <service
             android:name=".service.RemoteControlService"
             android:enabled="true"
@@ -34,7 +34,9 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".TestActivity">
+        <activity android:name=".TestActivity" />
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,6 +44,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".fragment.FragmentLazyTest" />
+        <activity android:name=".swipeRefreshLayout.SwipeRefreshLayoutTestActivity" />
     </application>
 
 </manifest>

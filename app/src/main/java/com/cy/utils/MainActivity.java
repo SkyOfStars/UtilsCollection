@@ -1,10 +1,10 @@
 package com.cy.utils;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 
 import com.cy.utils.fragment.FragmentLazyTest;
+import com.cy.utils.swipeRefreshLayout.SwipeRefreshLayoutTestActivity;
 
 public class MainActivity extends BaseActivity {
 
@@ -30,12 +30,15 @@ public class MainActivity extends BaseActivity {
 
 
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.tv_fragment_lazyload_text:
+        switch (view.getId()) {
+            case R.id.btn_fragment_lazyload_text:
                 startActivity(new Intent(mContext, FragmentLazyTest.class));
                 break;
-                default:
-                    break;
+            case R.id.btn_wipeRefreshLayoutTest:
+                startActivity(new Intent(mContext, SwipeRefreshLayoutTestActivity.class));
+                break;
+            default:
+                break;
         }
     }
 }
