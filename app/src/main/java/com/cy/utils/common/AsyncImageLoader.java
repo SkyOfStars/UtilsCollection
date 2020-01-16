@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class AsyncImageLoader
+public final class AsyncImageLoader
 {
 	// 为了加快速度，在内存中开启缓存（主要应用于重复图片较多时，或者同一个图片要多次被访问，比如在ListView时来回滚动）
 	public Map< String, SoftReference< Drawable >> imageCache = new HashMap< String, SoftReference< Drawable >>();

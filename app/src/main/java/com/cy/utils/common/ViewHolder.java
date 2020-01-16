@@ -6,7 +6,7 @@ import android.util.SparseArray;
 /**
  * 比较规范独立的的ViewHolder.
  */
-public class ViewHolder {
+public final class ViewHolder {
 
     public static <T extends View> T get(View view, int id) {
         SparseArray<View> viewHolder = (SparseArray<View>) view.getTag();

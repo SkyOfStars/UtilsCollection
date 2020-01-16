@@ -4,16 +4,18 @@ import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.util.DisplayMetrics;
 
 import java.util.List;
 
 /**
  * created by cy on 2019/11/20 0020.
  */
-public class AppUtil {
+public final class AppUtil {
     /**
      * 获取应用程序名称
      */
@@ -109,4 +111,23 @@ public class AppUtil {
         return bm;
     }
 
+    /**
+     * 获取屏幕尺寸与密度.
+     *
+     * @param context the context
+     * @return mDisplayMetrics
+     */
+    public static DisplayMetrics getDisplayMetrics(Context context) {
+        Resources mResources;
+        if (context == null){
+            mResources = Resources.getSystem();
+
+        }else{
+            mResources = context.getResources();
+        }
+        //DisplayMetrics{density=1.5, width=480, height=854, scaledDensity=1.5, xdpi=160.421, ydpi=159.497}
+        //DisplayMetrics{density=2.0, width=720, height=1280, scaledDensity=2.0, xdpi=160.42105, ydpi=160.15764}
+        DisplayMetrics mDisplayMetrics = mResources.getDisplayMetrics();
+        return mDisplayMetrics;
+    }
 }

@@ -2,6 +2,8 @@ package com.cy.utils;
 
 import android.util.Log;
 
+import com.cy.utils.common.DateUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,13 +13,6 @@ import java.util.List;
 public class Test {
     private static final String TAG = "Test";
     public static  void  main(String[] args){
-        List< String > commandList = new ArrayList< String >();
-        commandList.add("logcat" );
-        commandList.add( "-f" );
-        commandList.add( "log_path" );
-        commandList.add( "-v" );
-        commandList.add( "time" );
-        String[] s = commandList.toArray(new String[commandList.size()]);
-        System.out.println(s);
+        System.out.println("main: --time="+DateUtil.getDateByFormat("2019-12-21 12:34:46",DateUtil.dateFormatYMDHMS));
     }
 }

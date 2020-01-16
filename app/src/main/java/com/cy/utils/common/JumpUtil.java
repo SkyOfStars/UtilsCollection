@@ -4,6 +4,6 @@ package com.cy.utils.common;
  * Created by cy on 2018/4/25 0025.
  */
 
-public class JumpUtil {
+public final class JumpUtil {
 
 }

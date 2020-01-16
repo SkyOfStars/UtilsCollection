@@ -32,7 +32,7 @@ import static androidx.core.app.ActivityCompat.checkSelfPermission;
  * 本机信息帮助类
  */
 
-public class DeviceUtil {
+public final class DeviceUtil {
 
     private DeviceUtil(){
         throw new UnsupportedOperationException("cannot be instantiated");

@@ -7,7 +7,7 @@ import java.security.NoSuchAlgorithmException;
  * Created by Administrator on 2018/1/8 0008.
  */
 
-public class MD5Util {
+public final class MD5Util {
     /**
      * 生成32位md5码
      *

@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * @author cy
  */
-public class SPUtil {
+public final class SPUtil {
     private SPUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }

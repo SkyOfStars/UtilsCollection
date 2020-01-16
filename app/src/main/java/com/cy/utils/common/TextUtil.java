@@ -10,7 +10,7 @@ import android.widget.TextView;
 /**
  * cy
  */
-public class TextUtil {
+public final class TextUtil {
 
     private TextUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");

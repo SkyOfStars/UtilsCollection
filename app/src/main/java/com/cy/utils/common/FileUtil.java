@@ -33,7 +33,7 @@ import java.util.zip.ZipOutputStream;
 /**
  * @author
  */
-public class FileUtil {
+public final class FileUtil {
     private static final int DEFAULT_READING_SIZE = 8192;
 
     private FileUtil() {

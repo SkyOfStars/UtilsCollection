@@ -6,7 +6,7 @@ import android.util.Log;
  * Created by cy
  */
 
-public class LogUtil {
+public final class LogUtil {
 
     private static final String TAG = "LogUtil_DEBUG";
 

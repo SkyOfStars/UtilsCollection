@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * cy
  */
 
-public class SoundUtil {
+public final class SoundUtil {
 
     private static SoundUtil util;
 
