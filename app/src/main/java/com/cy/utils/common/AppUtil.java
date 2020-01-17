@@ -53,6 +53,28 @@ public final class AppUtil {
     }
 
     /**
+     * 获取进程名字
+     * @param context
+     * @return
+     */
+    public static String getProcessName(Context context) {
+        int pid = android.os.Process.myPid();
+        //获取ActivityManager对象
+        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        //在运行的进程的
+        List<ActivityManager.RunningAppProcessInfo> runningApps = am.getRunningAppProcesses();
+        if (runningApps == null) {
+            return null;
+        }
+        for (ActivityManager.RunningAppProcessInfo procInfo : runningApps) {
+            if (procInfo.pid == pid) {
+                return procInfo.processName;
+            }
+        }
+        return null;
+    }
+
+    /**
      * [获取应用程序版本名称信息]
      *
      * @param context

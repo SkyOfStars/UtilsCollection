@@ -26,7 +26,7 @@ public class Client {
 
         composite1.add(leaf1);
         composite1.add(composite2);
-        
+
         composite1.doSomething();
     }
 

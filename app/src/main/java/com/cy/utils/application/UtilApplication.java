@@ -1,7 +1,8 @@
-package com.cy.utils;
+package com.cy.utils.application;
 
 import android.app.Application;
 import android.content.Context;
+import android.util.Log;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 
@@ -15,6 +16,7 @@ public class UtilApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.i(TAG, "onCreate: ");
         this.mContext = this;
         Fresco.initialize(this);
     }
