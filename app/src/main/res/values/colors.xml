@@ -8,4 +8,5 @@
     <color name="transparent_color_black">#1A000000</color>
     <color name="font_bg_red">#E1282A</color>
     <color name="font_black">#262626</color>
+    <color name="grey">#59000000</color>
 </resources>

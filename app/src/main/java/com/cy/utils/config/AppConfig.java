@@ -9,4 +9,5 @@ public class AppConfig {
 
     /**  UI设计的基准高度. */
     public static int UI_HEIGHT = 1080;
+
 }

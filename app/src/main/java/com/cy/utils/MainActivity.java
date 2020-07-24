@@ -34,18 +34,6 @@ public class MainActivity extends BaseActivity {
 
 
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_fragment_lazyload_text:
-                startActivity(new Intent(mContext, FragmentLazyTest.class));
-                break;
-            case R.id.btn_wipeRefreshLayoutTest:
-                startActivity(new Intent(mContext, SwipeRefreshLayoutTestActivity.class));
-                break;
-            case R.id.btn_start_service:
-                startService(new Intent(mContext, RemoteControlService.class));
-                break;
-            default:
-                break;
-        }
+
     }
 }
