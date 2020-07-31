@@ -6,6 +6,8 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.cy.utils.constant.Constant;
+
 public abstract class BaseActivity extends AppCompatActivity {
     protected final String TAG = this.getClass().getName();
     protected Context mContext;
@@ -17,6 +19,7 @@ public abstract class BaseActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         Log.i(TAG, "onCreate: ");
+        Constant.attachActivity(this);
         this.mContext = BaseActivity.this;
         if (getContentView() != 0) {
             setContentView(getContentView());
