@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public abstract class BaseActivity extends AppCompatActivity {
     protected final String TAG = this.getClass().getName();
     protected Context mContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,14 +18,15 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
         Log.i(TAG, "onCreate: ");
         this.mContext = BaseActivity.this;
-        setContentView(getContentView());
+        if (getContentView() != 0) {
+            setContentView(getContentView());
+        }
         initView();
         initListener();
         initData();
     }
 
     /**
-     *
      * @return
      */
     protected abstract int getContentView();

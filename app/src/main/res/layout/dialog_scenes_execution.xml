@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="454dp"
+    android:layout_height="284dp"
+    android:background="@drawable/ic_dialog_bg_execution">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="关闭提醒" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp">
+
+        <ImageView
+            android:id="@+id/iv_start"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="112dp"
+            android:background="@mipmap/ic_execution"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_start"
+            android:gravity="left|center"
+            android:text="启用"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="192dp"
+        android:text="确认"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="192dp"
+        android:layout_marginRight="27dp"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>
