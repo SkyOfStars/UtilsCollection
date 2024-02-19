@@ -11,6 +11,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/arouter" />
+            <option value="$PROJECT_DIR$/arouter/arouter-annotation" />
+            <option value="$PROJECT_DIR$/arouter/arouter-api" />
+            <option value="$PROJECT_DIR$/arouter/arouter-compiler" />
+            <option value="$PROJECT_DIR$/arouter/arouter-gradle-plugin" />
           </set>
         </option>
       </GradleProjectSettings>

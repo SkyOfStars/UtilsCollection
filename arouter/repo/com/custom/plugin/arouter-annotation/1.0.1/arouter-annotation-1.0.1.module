@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.custom.plugin",
+    "module": "arouter-annotation",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "arouter-annotation-1.0.1.jar",
+          "url": "arouter-annotation-1.0.1.jar",
+          "size": 8854,
+          "sha512": "b82f4ffdee4bdeac03301f7a45eda596dfda597b63af1d058bf2d73c5e79a8f5db543d4028ef47969932c73d74722cb74ec905cb1d11d37235a0cd4617b03976",
+          "sha256": "c251be88477256968c8dbbd092be9f840a8ac0b3e76869527627d98da61bcea4",
+          "sha1": "1f414823e1e11085201663bfdd6f0ab92b20e9cc",
+          "md5": "e050ea3f135d0f692183eb477bd474c0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "arouter-annotation-1.0.1.jar",
+          "url": "arouter-annotation-1.0.1.jar",
+          "size": 8854,
+          "sha512": "b82f4ffdee4bdeac03301f7a45eda596dfda597b63af1d058bf2d73c5e79a8f5db543d4028ef47969932c73d74722cb74ec905cb1d11d37235a0cd4617b03976",
+          "sha256": "c251be88477256968c8dbbd092be9f840a8ac0b3e76869527627d98da61bcea4",
+          "sha1": "1f414823e1e11085201663bfdd6f0ab92b20e9cc",
+          "md5": "e050ea3f135d0f692183eb477bd474c0"
+        }
+      ]
+    }
+  ]
+}

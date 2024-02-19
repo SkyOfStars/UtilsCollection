@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.custom.plugin",
+    "module": "arouter-register",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 14,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "arouter-register-1.0.1.jar",
+          "url": "arouter-register-1.0.1.jar",
+          "size": 45209,
+          "sha512": "b277a63fa81f9276753dc2a3be075c861410e5e23a2aad91c7390b7959cfb37a282868288dbc7201ff554ae27247341496a747bd708b93ab7d797d8bddd0e694",
+          "sha256": "05c40f2a21e841a2bd86937a06a4eb90af2557cfd5060d39e4f3cb3ce561e578",
+          "sha1": "3ebfcbe49a2d06a473ae0995605ccf31de4a6dcb",
+          "md5": "daedeff845c0aec79fe07ab9f8320b4a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 14,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.3.0"
+          }
+        },
+        {
+          "group": "commons-codec",
+          "module": "commons-codec",
+          "version": {
+            "requires": "1.11"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "arouter-register-1.0.1.jar",
+          "url": "arouter-register-1.0.1.jar",
+          "size": 45209,
+          "sha512": "b277a63fa81f9276753dc2a3be075c861410e5e23a2aad91c7390b7959cfb37a282868288dbc7201ff554ae27247341496a747bd708b93ab7d797d8bddd0e694",
+          "sha256": "05c40f2a21e841a2bd86937a06a4eb90af2557cfd5060d39e4f3cb3ce561e578",
+          "sha1": "3ebfcbe49a2d06a473ae0995605ccf31de4a6dcb",
+          "md5": "daedeff845c0aec79fe07ab9f8320b4a"
+        }
+      ]
+    }
+  ]
+}
