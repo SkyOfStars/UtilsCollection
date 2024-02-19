@@ -55,6 +55,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.OvalActivity" />
+
+        <service android:name=".log.LogService" />
     </application>
 
 </manifest>

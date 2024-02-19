@@ -1,4 +1,4 @@
-package com.luxshare.burnintest.service;
+package com.cy.utils.log;
 
 import android.app.Service;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import com.luxshare.base.utils.FileUtils;
+import com.cy.utils.common.FileUtils;
 
 import java.io.*;
 import java.text.SimpleDateFormat;

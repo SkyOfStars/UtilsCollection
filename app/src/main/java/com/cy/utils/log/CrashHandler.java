@@ -1,4 +1,4 @@
-package com.luxshare.burnintest.manager;
+package com.cy.utils.log;
 
 import android.content.Context;
 import android.os.Environment;
@@ -53,7 +53,6 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
      */
     @Override
     public void uncaughtException(Thread thread, Throwable ex) {
-        TestResultManager.getInstance().generateReport();
         if (!handleException(ex) && mDefaultHandler != null) {
             //如果自己没处理交给系统处理
             mDefaultHandler.uncaughtException(thread, ex);

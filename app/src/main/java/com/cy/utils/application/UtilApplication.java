@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.util.Log;
 
+import com.cy.utils.log.CrashHandler;
 import com.facebook.drawee.backends.pipeline.Fresco;
 
 /**
@@ -19,6 +20,7 @@ public class UtilApplication extends Application {
         Log.i(TAG, "onCreate: ");
         this.mContext = this;
         Fresco.initialize(this);
+        CrashHandler.getInstance().init(getApplicationContext());
     }
 
     public static Context getContext() {
